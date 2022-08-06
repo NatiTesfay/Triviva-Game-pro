@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sport.css">
+  <title>Trivia</title>
+</head>
+<body>
+  </div>
+  <div class="form-container">
+    <form id="form-cont" action="#" onsubmit="event.preventDefault(), getQuestion(), hiddeForm()">
+      <h2>Select options</h2>
+      <label for="n-questions">Number of Questions</label>
+     
+      <select name="" id="n-questions">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+      </select> 
+      <label for="difficulty">Select Difficulty</label>
+      <select name="" id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Normal</option>
+        <option value="hard">Hard</option>
+      </select>
+      <label for="type">Select type</label>
+      <select name="" id="type">
+        <option value="multiple">Multiple Choise</option>
+        <option value="boolean">True/False</option>
+      </select>
+      <button type="submit"> Go</button>
+    </form>
+    <div class="container" id="container-question"></div>
+    <div id="finish-section" ></div>
+    <br>
+    <div id="scorePosition">
+      <p id="countDown" style="color: white;font-size: 60px;font-weight:bold;"></p>
+    </div>
+    <br>
+    <div class="countHolder">
+      <p class="scorePoints" id="goodPoints" style="color:green;">0</p>
+      <p class="scorePoints" id="badPoints" style="color: red;">0</p>
+  </div>
+  <script src="sport.js"></script>
+</body>
+
+</html>
