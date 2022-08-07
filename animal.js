@@ -29,12 +29,12 @@ const finishSection = document.getElementById("finish-section");
     });
 }
 
-function desorderPositionArray(array, iter) {               
+function desorderPositionArray(array, item) {               
   let random = []                                          
 
-  while (random.length < iter) {                            
+  while (random.length < item) {                            
 
-    let positionArray = Math.floor(Math.random() * iter)    
+    let positionArray = Math.floor(Math.random() * item)    
 
     if (!random.includes(array[positionArray])) {           
       random.push(array[positionArray])                     
