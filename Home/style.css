@@ -6,6 +6,10 @@
 
   .container{
     width: 100%;
+    border: 5px solid black;
+    border-radius: 15px;
+    height: 30vh;
+    margin-top: 35rem;
   }
   
   .title{
@@ -33,21 +37,7 @@
     
   }
   
-  .start p{
-    margin: 50px 0;
-    color: #914fd8f9;
-    /* color: red; */
-    text-shadow: 2px 0px 0px #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-    font-size: 1.5rem;
-    font-family: 'Original Surfer', cursive;
-    font-weight: 600;
-  }
-  
-  .start p :hover{
-    border-color: rgba(195, 188, 188, 0.134);
-    box-shadow: 0 5px;
-  }
-  
+
   .start a{
     cursor: pointer;
     border-radius: 10px;
