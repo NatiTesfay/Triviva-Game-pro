@@ -46,7 +46,6 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
     font-weight: bold;
-
 }
   
   
@@ -61,7 +60,7 @@
   
   
   .form-container{
-    width: 50%;
+    width: auto;
     height: auto;
     margin: auto;
     border: 1px solid #fff;
@@ -81,7 +80,7 @@
   
   form label{
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
   } 
@@ -108,39 +107,40 @@
     width: 100%;
     border-radius: 10px;
     padding: 10px 0;
-    margin-top: 50px;
+    margin-top: 30px;
     cursor: pointer;
     background-color: white;
     color: black;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: 'Original Surfer', cursive;
     font-weight: 800;
   }
   
   
-  
-  /* //-------------------------Media-Query-------------------------/ */
-  
+  /* ----------------------------------------------------------- */
   @media (max-width:1024px){
     .form-container{
-      width: 50%;
+      width: 80%;
     }
   }
   
   @media (max-width:650px){
     .form-container{
-      width: 70%;
+      width: 80%;
     }
+  
+    
+  .form-container{
+    width: 98%;
+    height: auto;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 20px ;
+    padding:0 ;
+    padding-bottom: 20px;
+    background: rgb(102, 14, 102);
   }
-  
-  /* @media (max-width:425px){
-    .form-container{
-      width: 85%;
-    }
-  } */
-  
-  /* //----------------------------------form-Test----------------------// */
-  
+}
   
   .dp-none{
     display: none;

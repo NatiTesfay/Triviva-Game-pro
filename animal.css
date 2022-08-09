@@ -1,217 +1,206 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-  }
-  .container{
-    width: 100%;
-    height: 100vh;
-    /* border: 3px solid black; */
-    border-radius: 15px;
-    padding: 5rem;
-    background-color:purple;
-    
-  }
-
-  #scorePosition{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    display: grid;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   
-  #counDowm{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    display: grid;
-  }
+}
+
+#scorePosition{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  display: grid;
+}
+
+#counDowm{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  display: grid;
+}
 
 
 .scorePosition{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    display: grid;
-    color: white;
-    border: 2px solid white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  display: grid;
+  color: white;
+  border: 2px solid white;
 }
 .countHolder{
-    justify-content: space-evenly;
-    align-items: center;
-    display: flex;  
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;  
 
 }
 .scorePoints{
-    border: 5px;
-    background-color: white;
-    height: 10vh;
-    width: 20vw;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    font-weight: bold;
+  border: 5px;
+  background-color: white;
+  height: 10vh;
+  width: 20vw;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+
+
+.form-container{
+  width: auto;
+  height: auto;
+  margin: auto;
+  border: 1px solid #fff;
+  border-radius: 20px ;
+  padding:0 20px;
+  padding-bottom: 20px;
+  background: rgb(102, 14, 102);
+}
+
+.form-container h2{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 2.3rem;
 
 }
-  
-  
-  body{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-  }
 
+form label{
+  color: #fff;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+} 
+
+select{
+  width: 100%;
+  padding: 12px 0;
+  margin: 5px 0px;
+  border: none;
+  border-radius: 5px;
+  border-bottom:2px solid white;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  background: black;
   
-  
+}
+
+select:focus{
+    outline: none;
+}
+
+.form-container button{
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 0;
+  margin-top: 30px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
+  font-family: 'Original Surfer', cursive;
+  font-weight: 800;
+}
+
+
+/* ----------------------------------------------------------- */
+@media (max-width:1024px){
   .form-container{
-    width: 30%;
-    height: auto;
-    margin: auto;
-    border: 2px solid #fff;
-    border-radius: 20px ;
-    padding:0 20px;
-    padding-bottom: 20px;
-    background: black;
-    
+    width: 80%;
   }
-  
-  .form-container h2{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 2.3rem;
+}
 
+@media (max-width:650px){
+  .form-container{
+    width: 80%;
   }
+
   
-  form label{
-    color: #fff;
-    font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-  } 
-  
-  select{
-    width: 100%;
-    padding: 12px 0;
-    margin: 5px 0px;
-    border: none;
-    border-radius: 5px;
-    border-bottom:2px solid white;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1rem;
-    background: black;
-    
-  }
-  
-  select:focus{
-      outline: none;
-  }
-  
-  .form-container button{
-    width: 100%;
-    border-radius: 10px;
-    padding: 10px 0;
-    margin-top: 50px;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    font-size: 1.2rem;
-    font-family: 'Original Surfer', cursive;
-    font-weight: 800;
-  
-  }
-  
-  
-  
-  /* //-------------------------Media-Query-------------------------/ */
-  
-  @media (max-width:1024px){
-    .form-container{
-      width: 50%;
-    }
-  }
-  
-  @media (max-width:650px){
-    .form-container{
-      width: 70%;
-    }
-  }
-  
-  /* @media (max-width:425px){
-    .form-container{
-      width: 85%;
-    }
-  } */
-  
-  /* //----------------------------------form-Test----------------------// */
-  
-  
-  .dp-none{
-    display: none;
-  }
-  
-  .form-test{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-test .question-form h2{
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-  }
-  
-  .form-test .answer-form{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-test .answer-form label{
-    padding: 15px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    border-radius: 15px;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .form-test .answer-form label:hover{
-    background-color: rgb(202, 162, 202);
-  }
-  
-  .form-test .answer-form input{
-    margin-right: 10px;
-  }
-  
-  .form-test .answer-form button{
-    margin: 10px 0;
-    border-radius: 15px;
-  }
-  
-  .finish{
-    width: 100%;
-    font-family: 'Original Surfer', cursive;
-    color: #fff;
-  }
-  
-  .mb{
-    margin-bottom: 40px;
-  }
-  
-  .finish a{
-    text-decoration: none;
-    border-radius: 10px;
-    padding: 10px;
-    cursor: pointer;
-    background-color: black;
-    color: white;
-    font-size: 1.2rem;
-    font-family: 'Original Surfer', cursive;
-    font-weight: 800;
-  }
+.form-container{
+  width: 98%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #fff;
+  border-radius: 20px ;
+  padding:0 ;
+  padding-bottom: 20px;
+  background: rgb(102, 14, 102);
+}
+}
+
+.dp-none{
+  display: none;
+}
+
+.form-test{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-test .question-form h2{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.form-test .answer-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-test .answer-form label{
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-test .answer-form label:hover{
+  background-color: rgb(202, 162, 202);
+}
+
+.form-test .answer-form input{
+  margin-right: 10px;
+}
+
+.form-test .answer-form button{
+  margin: 10px 0;
+  border-radius: 15px;
+}
+
+.finish{
+  width: 100%;
+  font-family: 'Original Surfer', cursive;
+  color: #fff;
+}
+
+.mb{
+  margin-bottom: 40px;
+}
+
+.finish a{
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Original Surfer', cursive;
+  font-weight: 800;
+}
