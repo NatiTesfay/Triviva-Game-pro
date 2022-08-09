@@ -13,7 +13,7 @@ const finishSection = document.getElementById("finish-section");
 //   const categoryQuestions = document.getElementById("category").value;       
   const difficultyQuestions = document.getElementById("difficulty").value;  
   const typeQuestions = document.getElementById("type").value;              
-  const historyApi = `https://opentdb.com/api.php?amount=10&category=23`; 
+  const historyApi = `https://opentdb.com/api.php?amount=6&category=23`; 
   
   function getQuestion() { 
     fetch(historyApi)                               

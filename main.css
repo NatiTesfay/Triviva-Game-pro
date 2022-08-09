@@ -8,7 +8,7 @@
     width: 100%;
     height: 100vh;
     padding: 10rem;
-    background-color:purple;
+    background-image: linear-gradient(purple,grey,purple,grey);
   }
   
   .title{
