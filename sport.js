@@ -69,6 +69,7 @@ function changeQuestion() {
   } else {                                                                
     container.innerHTML = renderQuestionsBoolean(dataQuestion.results);   
   }
+  
   return;
 
 }
@@ -77,7 +78,8 @@ function changeQuestion() {
 function renderQuestionsTemplate(question) {                 
   var array = question[position].incorrect_answers           
   array.push(question[position].correct_answer)              
-  let newOrderQuestion = desorderPositionArray(array, 4)     
+  let newOrderQuestion = desorderPositionArray(array, 4) 
+  setInterval(countDown,1000);    
   return `<form class="form-test" onsubmit="event.preventDefault(), changeQuestion()">   
     <div class="question-form">
       <h2>${question[position].question}</h2>
@@ -106,7 +108,7 @@ function renderQuestionsTemplate(question) {
   </form>`;
 }
 
-setInterval(countDown,1000);
+
 function countDown() {
     const minutes = Math.floor(timerCountDown)
     let second = timeMin % 60;
@@ -114,7 +116,10 @@ function countDown() {
         timeHolder.innerHTML = `${minutes}:${second}`
         timeMin -- ;
     }
-    alert('you lost looser');
+    if (second == 0) {
+      alert('you lost looser');
+    }
+    
 } 
                          
 function getInputsValue() {                                   

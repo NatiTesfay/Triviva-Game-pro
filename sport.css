@@ -61,15 +61,14 @@
   
   
   .form-container{
-    width: 30%;
+    width: 50%;
     height: auto;
     margin: auto;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 20px ;
     padding:0 20px;
     padding-bottom: 20px;
-    background: black;
-    
+    background: rgb(102, 14, 102);
   }
   
   .form-container h2{
@@ -116,7 +115,6 @@
     font-size: 1.2rem;
     font-family: 'Original Surfer', cursive;
     font-weight: 800;
-  
   }
   
   
