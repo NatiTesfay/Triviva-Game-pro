@@ -29,6 +29,8 @@ const finishSection = document.getElementById("finish-section");
     });
 }
 
+
+
 function desorderPositionArray(array, item) {               
   let random = []                                          
 
@@ -60,7 +62,6 @@ function changeQuestion() {
     finishSection.innerHTML = `<div class = "finish" style="width: 100%; padding: 100px 0px; text-align: center; font-size: 1.3rem;"><h1 class = "mb">Test finished<br> Score = ${score}</h1><a href="../pages/select.html">Play Again</a></div>`
     return
   }
-
   position++;                                                             
   const typeQuestions = document.getElementById("type").value;            
   if (typeQuestions === "multiple") {                                     
@@ -113,9 +114,8 @@ function countDown() {
         timeHolder.innerHTML = `${minutes}:${second}`
         timeMin -- ;
     }
+    alert('you lost looser');
 } 
-
-
                          
 function getInputsValue() {                                   
   let answerInput = document.getElementsByTagName("input");   
