@@ -18,6 +18,7 @@ const badPoints = document.getElementById("badPoints");
   const artApi = `https://opentdb.com/api.php?amount=10&category=20`; 
   
  
+ 
   function getQuestion() { 
     fetch(artApi)                               
       .then((response) => response.json())    
@@ -32,9 +33,26 @@ const badPoints = document.getElementById("badPoints");
       });  setInterval(countDown,1000)  
   }
   
+  
 
   
- 
+  function desorderPositionArray(array, item) {               
+    let random = []                                          
+  
+    while (random.length < item) {                            
+  
+      let positionArray = Math.floor(Math.random() * item)    
+  
+      if (!random.includes(array[positionArray])) {           
+        random.push(array[positionArray])                     
+      }
+    }
+    return random                                             
+  }
+
+  
+  
+  
   function hiddeForm() {                                     
     document.getElementById("form-cont").classList.add("dp-none");
   }
@@ -49,7 +67,7 @@ const badPoints = document.getElementById("badPoints");
   
     if (position === dataQuestion.results.length - 1) {       
       container.style.display = "none"                              
-      finishSection.innerHTML = `<div class = "finish" style="width: 100%; padding: 100px 0px; text-align: center; font-size: 1.3rem;"><h1 class = "mb">Test finished<br> Score = ${score}</h1><a href="../pages/select.html">Play Again</a></div>`
+      finishSection.innerHTML = `<div class = "finish" style="width: 100%; padding: 100px 0px; text-align: center; font-size: 1.3rem;"><h1 class = "mb">Test finished<br> Score = ${score}</h1><a href="../mainindex.html">Play Again</a></div>`
       return
     }
     position++;                                                             
@@ -129,3 +147,4 @@ const badPoints = document.getElementById("badPoints");
       }
     })
   }
+  
