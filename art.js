@@ -67,7 +67,7 @@ const badPoints = document.getElementById("badPoints");
   
     if (position === dataQuestion.results.length - 1) {       
       container.style.display = "none"                              
-      finishSection.innerHTML = `<div class = "finish" style="width: 100%; padding: 100px 0px; text-align: center; font-size: 1.3rem;"><h1 class = "mb">Test finished<br> Score = ${score}</h1><a href="../mainindex.html">Play Again</a></div>`
+      finishSection.innerHTML = `<div class = "finish" style="width: 100%; padding:  color: black; 100px 0px; text-align: center; font-size: 1.3rem;"><h1 class = "mb">Test finished<br> Score = ${score}</h1><a href="../mainindex.html">Play Again</a></div>`
       return
     }
     position++;                                                             
