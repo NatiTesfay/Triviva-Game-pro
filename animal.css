@@ -1,11 +1,22 @@
 *{
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  
+  box-sizing: border-box; 
+}
+body{
+  background-color: white;
+  background-image: linear-gradient(315deg,#b8c6db 0%,#f5f7f7 );
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
 }
 
 #scorePosition{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -47,55 +58,39 @@
   font-size: 60px;
   font-weight: bold;
 }
-
-
-body{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-}
-
-
-
+  
 .form-container{
-  width: auto;
-  height: auto;
-  margin: auto;
-  border: 1px solid #fff;
-  border-radius: 20px ;
-  padding:0 20px;
-  padding-bottom: 20px;
-  background-image: linear-gradient(grey,purple,grey);
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 0 10px 2px black;
 }
 
 .form-container h2{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 2.3rem;
+  font-size: 3.3rem;
 
 }
 
 form label{
-  color: #fff;
-  font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  color: black;
+  font-size: 2.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
 } 
 
 select{
   width: 100%;
-  padding: 12px 0;
+  padding: 15px 0;
   margin: 5px 0px;
   border: none;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   border-bottom:2px solid white;
   color: #fff;
   font-weight: 600;
-  font-size: 1rem;
-  background: black;
+  font-size: 2rem;
+  background: rgb(0, 0, 0);
   
 }
 
@@ -104,16 +99,21 @@ select:focus{
 }
 
 .form-container button{
-  width: 100%;
-  border-radius: 10px;
-  padding: 10px 0;
-  margin-top: 30px;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  font-size: 2rem;
-  font-family: 'Original Surfer', cursive;
-  font-weight: 800;
+ background: rgb(102, 14, 102);
+ border: none;
+ display: block;
+ width: 100%;
+ cursor: pointer;
+ font-size: 2.5rem;
+ font-family: 'Times New Roman', Times, serif;
+ padding: 2rem;
+}
+.form-container button:hover{
+background-color: rgb(141, 85, 141);
+}
+.form-container button:focus{
+  outline: none;
+  background-color: rgb(63, 18, 97);
 }
 
 
@@ -139,6 +139,10 @@ select:focus{
   padding:0 ;
   padding-bottom: 20px;
   background: rgb(102, 14, 102);
+  color: black;
+}
+.form-con{
+  padding: 4rem;
 }
 }
 
@@ -153,13 +157,15 @@ select:focus{
 
 .form-test .question-form h2{
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-bottom: 15px;
+  color: black;
 }
 
 .form-test .answer-form{
   display: flex;
   flex-direction: column;
+  
 }
 
 .form-test .answer-form label{
@@ -180,7 +186,7 @@ select:focus{
 
 .form-test .answer-form button{
   margin: 10px 0;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .finish{
@@ -195,12 +201,12 @@ select:focus{
 
 .finish a{
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
   cursor: pointer;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.055);
   color: white;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: 'Original Surfer', cursive;
   font-weight: 800;
 }

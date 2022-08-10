@@ -15,7 +15,7 @@ const badPoints = document.getElementById("badPoints");
 //   const categoryQuestions = document.getElementById("category").value;       
   const difficultyQuestions = document.getElementById("difficulty").value;  
   const typeQuestions = document.getElementById("type").value;              
-  const artApi = `https://opentdb.com/api.php?amount=10&category=25`; 
+  const artApi = `https://opentdb.com/api.php?amount=10&category=20`; 
   
  
   function getQuestion() { 
